@@ -169,7 +169,7 @@ a {
 /*the class usage for text alignment and padding*/
 .center {
     text-align: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 .padding {
@@ -179,6 +179,8 @@ a {
 .work {
     width: 32%;
     float: left;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
