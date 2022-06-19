@@ -56,20 +56,72 @@ a {
     background-size: cover;
 }
 
+.top {
+    max-width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.logo {
+    padding: 15px;
+    margin-left: 35px;
+}
+
+.menu {
+    padding: 10px;
+
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 8px;
+    padding: 10px;
+    color: #1e94ef;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .3s;
+    background-color: rgb(247, 253, 251);
+    border-radius: 10px;
+
+
+}
+
+.menu-item-style {
+    color: rgb(7, 219, 7);
+}
+
+.menu a:hover {
+    color: rgb(47, 47, 47);
+}
+
+.menu-item-style:hover {
+    color: #ef1e75;
+}
+
 /* all secton coverd by fixed size & max usage for responsive*/
+.area,
 .container {
     max-width: 95%;
     margin: 0 auto;
+
+}
+
+.area {
     overflow: hidden;
 }
 
 /*it's a class of 1st and 2nd section*/
 .half-width {
-    width: 44%;
+    width: 42%;
     float: left;
     padding-left: 10px;
     margin-left: 15px;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 /* some special property use for 1st section*/
@@ -110,6 +162,8 @@ a {
 /* 3rd section or work section started*/
 .work-banner {
     background-image: url("imgs/latest-work-bg.png");
+    display: flex;
+    justify-content: space-around;
 }
 
 /*the class usage for text alignment and padding*/
@@ -119,25 +173,37 @@ a {
 }
 
 .padding {
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 
 .work {
     width: 32%;
     float: left;
-    margin-bottom: 50px;
 
 }
 
 .work img {
-    width: 290px;
-    height: 300px;
-    margin-left: 40px;
+    width: 300px;
+    height: 330px;
+    margin-left: 35px;
     transition: 1s;
+}
+
+.certificate img {
+    width: 340px;
+    height: 250px;
 }
 
 .work img:hover {
     transform: scale(1.1);
+}
+
+.work p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(1, 48, 1);
 }
 
 /* 4th section or footer section started*/
@@ -167,9 +233,9 @@ a {
     text-align: center;
     padding: 10px;
     letter-spacing: 8px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: -10px;
-	color: #000;
+    color: #000;
 }
 
 .social {
@@ -196,11 +262,11 @@ a {
 }
 
 .footer-content {
-	margin: 15px auto;
-	width: 26%;
+    margin: 15px auto;
+    width: 26%;
     text-transform: uppercase;
     padding-top: 25px;
     text-align: center;
-	font-size: 13px;
-	border-bottom: 0.5px solid #ddd;
+    font-size: 13px;
+    border-bottom: 0.5px solid #ddd;
 }
